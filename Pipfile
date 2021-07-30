@@ -4,10 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-mypy = "*"
 
 [dev-packages]
+mypy = "*"
 pre-commit = "*"
+flake8 = "*"
+pycodestyle = "*"
+isort = "*"
+black = "*"
+bandit = "*"
+safety = "*"
 
 [requires]
 python_version = "3.9"
