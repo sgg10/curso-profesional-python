@@ -1,0 +1,9 @@
+repos:
+- repo: https://github.com/sgg10/curso-profesional-python
+  rev: master
+  hooks:
+   - id: mypy
+     name: 'Python types analyzer'
+     args: ['--cache-dir=/dev/null', './**']
+     language: python
+     pass_filename: false
