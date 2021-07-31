@@ -3,8 +3,10 @@ from typing import Callable, Union
 
 def make_division_by(n: Union[int, float]) -> Callable:
     assert n != 0, "You cannot divide by zero."
+
     def division(x: Union[int, float]) -> Union[int, float]:
         return x / n
+
     return division
 
 
